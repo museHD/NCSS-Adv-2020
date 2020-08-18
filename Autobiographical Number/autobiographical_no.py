@@ -2,7 +2,7 @@ def is_ab(num):
 	num_str = str(num)
 	freq = {}
 	revfreq = {}
-	# ↓ Going through the string and storing the frequency of each char in 'freq'
+	#  Going through the string and storing the frequency of each char in 'freq'
 	for digit in num_str:
 
 		revfreq[num_str.index(digit)] = digit
@@ -11,14 +11,15 @@ def is_ab(num):
 			freq[digit] += 1
 		else:
 			freq[digit] = 1
-	print(freq)
-	print(revfreq)
+
 	for x in range(len(num_str)):
 
-		print(freq[str(x)])
-		print(revfreq.get(freq[str(x)]))
-		# 2 
-		if freq[str(x)] == revfreq.get(freq[str(x)]):
-			print('yech')
+		this_digit = num_str[x]
+	# Checking if the each digit in the input number corresponds with the frequenc off digits
+		if freq.get(str(x),0) == int(this_digit):
+			print('yes')
+		else:
+			print('no')
 
-is_ab(21200)
+is_ab()
+
