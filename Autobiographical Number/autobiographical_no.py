@@ -28,7 +28,7 @@ def is_ab(num):
 number = input("Number: ")
 
 
-if is_ab(21200):
+if is_ab(number):
 	print("{} is autobiographical.".format(number))
 else:
 	print("{} is not autobiographical.".format(number))
