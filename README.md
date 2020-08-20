@@ -1,1 +1,1 @@
-questions.txt is just for my reference so I can work offline :/
+My solutions for the NCSS Challenge 2020 (Advanced) in written in Python.
